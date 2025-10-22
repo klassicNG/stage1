@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klassic — Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/20fbdbce1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" data-testid="test-navbar" role="navigation">
+      <div class="nav-container">
+        <a href="index.html" class="logo" data-testid="test-logo">Klassic</a>
+        <ul class="nav-links" data-testid="test-nav-links" id="navLinks">
+          <li>
+            <a href="index.html" class="active" aria-current="page">Home</a>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+
+        <!-- Keyboard accessible hamburger -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          data-testid="test-hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== PROFILE CARD ===== -->
+    <main class="fade-in" role="main">
+      <article class="profile-card" data-testid="test-profile-card">
+        <!-- HEADER -->
+        <header class="profile-header">
+          <figure>
+            <img
+              src="3.png"
+              alt="Profile photo of Godspower Victor"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+        </header>
+
+        <!-- MAIN BODY -->
+        <section class="profile-body">
+          <h2 class="name" data-testid="test-user-name">Godspower Victor</h2>
+          <p class="role">Web Developer</p>
+
+          <p class="bio" data-testid="test-user-bio">
+            Building and deploying outstanding web pages using HTML, CSS, and
+            JavaScript technologies.
+          </p>
+          <p class="time bio" data-testid="test-user-time"></p>
+
+          <nav
+            class="socials"
+            data-testid="test-user-social-links"
+            aria-label="Social media links"
+          >
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-facebook"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://wa.me/2347047177332"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-whatsapp"
+              aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </nav>
+
+          <button
+            class="btn-toggle"
+            aria-expanded="false"
+            aria-controls="extra-extension"
+          >
+            <i class="fa-solid fa-circle-plus"></i> See more
+          </button>
+
+          <!-- EXTRA CONTENT -->
+          <aside class="extra-extension" id="extra-extension">
+            <section class="hobbies" data-testid="test-user-hobbies">
+              <h3>Hobbies</h3>
+              <ul>
+                <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
+                <li><i class="fa-solid fa-code"></i> Coding</li>
+                <li><i class="fa-solid fa-book"></i> Reading</li>
+              </ul>
+            </section>
+
+            <section class="dislikes" data-testid="test-user-dislikes">
+              <h3>Dislikes</h3>
+              <ul>
+                <li><i class="fa-solid fa-wifi"></i> Slow Internet</li>
+                <li><i class="fa-solid fa-hourglass-half"></i> Waiting</li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

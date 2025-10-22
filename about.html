@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Klassic — About</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/20fbdbce1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" data-testid="test-navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo" data-testid="test-logo">Klassic</a>
+        <ul class="nav-links" data-testid="test-nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="about.html" class="active" aria-current="page">About Me</a>
+          </li>
+        </ul>
+        <!-- Hamburger menu (keyboard accessible) -->
+        <button
+          class="hamburger"
+          data-testid="test-hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div tabindex="-1" class="page-wrap">
+      <div class="about-wrap fade-in">
+        <main
+          data-testid="test-about-page"
+          role="main"
+          aria-labelledby="about-title"
+        >
+          <header>
+            <h1 class="head-text" id="about-title">About Klassic</h1>
+            <p class="norm-text">
+              Small brand, big ideas — a clean front-end-first studio that
+              values delightful micro-interactions and pixel care.
+            </p>
+          </header>
+
+          <section data-testid="test-about-bio" aria-labelledby="bio-title">
+            <h2 class="head-text" id="bio-title">Bio</h2>
+            <p class="norm-text">
+              I am a front-end developer who loves crafting accessible,
+              responsive, and beautifully animated interfaces. I focus on
+              writing semantic HTML, modular CSS, and pragmatic JavaScript.
+            </p>
+          </section>
+
+          <section data-testid="test-about-goals" aria-labelledby="goals-title">
+            <h2 class="head-text" id="goals-title">Goals in this program</h2>
+            <ul>
+              <li class="norm-text">
+                Master modern front-end tooling and accessibility best
+                practices.
+              </li>
+              <li class="norm-text">
+                Ship production-ready UI components and polished interactions.
+              </li>
+              <li class="norm-text">
+                Build a strong portfolio project that communicates craft &
+                intent.
+              </li>
+            </ul>
+          </section>
+
+          <section
+            data-testid="test-about-confidence"
+            aria-labelledby="confidence-title"
+          >
+            <h2 class="head-text" id="confidence-title">
+              Areas of low confidence
+            </h2>
+            <p class="norm-text">
+              I feel less confident with complex backend integrations,
+              server-side auth flows, and advanced infra tooling. I aim to learn
+              these over time while keeping front-end quality high.
+            </p>
+          </section>
+
+          <section
+            data-testid="test-about-future-note"
+            aria-labelledby="future-title"
+          >
+            <h2 class="head-text" id="future-title">Note to future self</h2>
+            <p class="norm-text">
+              Keep shipping small, delightful features. Focus on user empathy.
+              Iterate boldly and document everything.
+            </p>
+          </section>
+
+          <section data-testid="test-about-extra" aria-labelledby="extra-title">
+            <h2 class="head-text" id="extra-title">Extra thoughts</h2>
+            <p class="norm-text">
+              Design and code should hold hands. Seek feedback early, and treat
+              each project as both a learning opportunity and a portfolio
+              showcase.
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

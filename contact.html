@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Klassic — Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/20fbdbce1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" data-testid="test-navbar" role="navigation">
+      <div class="nav-container">
+        <a href="index.html" class="logo" data-testid="test-logo">Klassic</a>
+
+        <!-- Navigation links -->
+        <ul class="nav-links" data-testid="test-nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="contact.html" class="active" aria-current="page"
+              >Contact Us</a
+            >
+          </li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+
+        <!-- Hamburger menu (keyboard accessible) -->
+        <button
+          class="hamburger"
+          data-testid="test-hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <main id="main-content" tabindex="-1" class="page-wrap">
+      <div class="card-wrap fade-in">
+        <article class="contact-card" aria-labelledby="contact-heading">
+          <header class="contact-header">
+            <h1 id="contact-heading" class="head-text">Contact Klassic</h1>
+            <p>
+              Have a project, question or just want to say hi? Use the form
+              below and I’ll get back to you.
+            </p>
+          </header>
+
+          <!-- Contact form -->
+          <form id="contact-form" class="fade-in" novalidate>
+            <div class="contact-grid">
+              <div class="contact-left">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="contact-name">Full name</label>
+                    <input
+                      id="contact-name"
+                      name="name"
+                      type="text"
+                      data-testid="test-contact-name"
+                      aria-describedby="error-name"
+                      required
+                    />
+                    <div
+                      id="error-name"
+                      data-testid="test-contact-error-name"
+                      class="error error-name"
+                      aria-live="polite"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col">
+                    <label for="contact-email">Email</label>
+                    <input
+                      id="contact-email"
+                      name="email"
+                      type="email"
+                      data-testid="test-contact-email"
+                      aria-describedby="error-email"
+                      required
+                    />
+                    <div
+                      id="error-email"
+                      data-testid="test-contact-error-email"
+                      class="error"
+                      aria-live="polite"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="form-row2">
+                  <label for="contact-subject">Subject</label>
+                  <input
+                    id="contact-subject"
+                    name="subject"
+                    type="text"
+                    data-testid="test-contact-subject"
+                    aria-describedby="error-subject"
+                    required
+                  />
+                  <div
+                    id="error-subject"
+                    data-testid="test-contact-error-subject"
+                    class="error"
+                    aria-live="polite"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="contact-right">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  data-testid="test-contact-message"
+                  aria-describedby="error-message"
+                  required
+                ></textarea>
+                <div
+                  id="error-message"
+                  data-testid="test-contact-error-message"
+                  class="error"
+                  aria-live="polite"
+                ></div>
+              </div>
+            </div>
+
+            <div class="btn-box">
+              <button
+                type="submit"
+                class="submit-btn"
+                data-testid="test-contact-submit"
+              >
+                Send message
+              </button>
+              <div
+                id="contact-success"
+                data-testid="test-contact-success"
+                class="success"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </div>
+          </form>
+        </article>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
